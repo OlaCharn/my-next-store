@@ -1,18 +1,16 @@
-import Container from "../global/Container";
-import React from "react";
-import Logo from "./Logo";
-import NavSearch from "./NavSearch";
-import CartButton from "./CartButton";
-import DarkMode from "./DarkMode";
-import LinksDropdown from "./LinksDropdown";
-
+import Logo from './Logo';
+import LinksDropdown from './LinksDropdown';
+import DarkMode from './DarkMode';
+import CartButton from './CartButton';
+import NavSearch from './NavSearch';
+import Container from '../global/Container';
 function Navbar() {
   return (
-    <nav className="border-b">
-      <Container className="flex flex-col sm:flex-row sm:justify-between sm:items-center flex-wrap py-8 gap-4">
+    <nav className='border-b '>
+      <Container className='flex flex-col sm:flex-row  sm:justify-between sm:items-center flex-wrap gap-4 py-8'>
         <Logo />
         <NavSearch />
-        <div className="flex gap-4 items-center">
+        <div className='flex gap-4 items-center '>
           <CartButton />
           <DarkMode />
           <LinksDropdown />
@@ -21,5 +19,4 @@ function Navbar() {
     </nav>
   );
 }
-
 export default Navbar;
