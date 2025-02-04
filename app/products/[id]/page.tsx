@@ -8,7 +8,7 @@ import ProductRating from '@/components/single-product/ProductRating';
 
 async function SingleProductPage({ params }: { params: { id: string } }) {
   // Дожидаемся получения параметров
-  const { id } = await params;
+  const { id } = params;
 
   const product = await fetchSingleProduct(id);
   const { name, image, company, description, price } = product;
