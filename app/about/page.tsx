@@ -1,5 +1,9 @@
+import { Suspense } from 'react'
+
 function AboutPage() {
   return (
+    <Suspense fallback={<div>Loading...</div>}>
+
     <section>
       <h1 className='flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center text-4xl font-bold leading-none tracking-wide sm:text-6xl'>
         We love
@@ -14,6 +18,7 @@ function AboutPage() {
         labore nam?
       </p>
     </section>
+    </Suspense>
   );
 }
 export default AboutPage;

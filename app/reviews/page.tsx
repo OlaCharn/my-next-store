@@ -1,8 +1,12 @@
-import React from 'react'
+import { Suspense } from 'react'
+
 
 function ReviewsPage() {
   return (
-    <div>ReviewsPage</div>
+    <Suspense fallback={<div>Loading...</div>}>
+
+          <div>ReviewsPage</div>
+</Suspense>
   )
 }
 

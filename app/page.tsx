@@ -8,6 +8,7 @@ function Homepage() {
     <>
       <Hero />
       <Suspense fallback={<LoadingContainer /> }>
+
         <FeaturedProducts />
       </Suspense>
     </>
