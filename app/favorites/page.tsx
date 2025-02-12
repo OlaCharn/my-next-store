@@ -1,11 +1,15 @@
-import { Suspense } from 'react'
+import SectionTitle from "@/components/global/SectionTitle"
+import ProductsGrid from "@/components/products/ProductsGrid"
+import { fetchUserFavorites } from "@/utils/actions"
 
-function FavoritesPage() {
+async function FavoritesPage() {
+  const favorites = await fetchUserFavorites()
+  if(favorites.length === 0 ) return <SectionTitle text="You have no favorites yet" />
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-
-    <div>FavoritesPage</div>
-    </Suspense>
+    <div>
+      <SectionTitle text="Favorites" />
+      <ProductsGrid products={favorites.map((favorite) => favorite.product)} />
+    </div>
   )
 }
 
