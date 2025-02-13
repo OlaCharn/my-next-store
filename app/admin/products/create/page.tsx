@@ -1,6 +1,6 @@
 import FormInput from "@/components/form/FormInput";
 import { SubmitButton } from "@/components/form/Buttons";
-import { faker } from "@faker-js/faker";
+//import { faker } from "@faker-js/faker";
 import FormContainer from "@/components/form/FormContainer";
 import { createProductAction } from "@/utils/actions";
 import PriceInput from "@/components/form/PriceInput";
