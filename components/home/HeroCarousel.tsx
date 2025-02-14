@@ -1,11 +1,13 @@
-import octopus from "@/public/images/octopus.webp";
-import catman from "@/public/images/catman.webp";
-import indiana from "@/public/images/indiana.webp";
+import ai3 from "@/public/images/1.webp";
+import ai from "@/public/images/4.webp";
+import ai2 from "@/public/images/5.webp";
+
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { CardContent, Card } from "../ui/card";
 import Image from "next/image";
 
-const carouselImages = [octopus, catman, indiana];
+const carouselImages = [ai, ai2, ai3];
 
 function HeroCarousel() {
   return (
