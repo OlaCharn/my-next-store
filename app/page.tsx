@@ -10,7 +10,7 @@ function Homepage() {
       <Suspense fallback={<LoadingContainer />}>
         <FeaturedProducts />
         <div className="flex justify-center items-center h-full w-full mt-10">
-          <p>Fake Store</p>
+          <p className="text-xs" >Favs Fake Store</p>
         </div>
       </Suspense>
     </>

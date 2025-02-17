@@ -69,3 +69,8 @@
   }
 }
 
+@layer components {
+  .btn-outline {
+    @apply border-primary text-primary hover:bg-primary/10;
+  }
+}

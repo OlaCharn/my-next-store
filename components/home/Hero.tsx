@@ -16,9 +16,14 @@ function Hero() {
       Explore hidden gems and iconic heroes, 
       all within a collection that speaks to every fan's heart.
       </p>
-      <Button asChild size="lg" className="mt-10"> 
+      <div >
+      <Button asChild size="lg" className="mt-10 mr-4"> 
         <Link href="/products" > Our comics </Link>
       </Button>
+      <Button asChild size="lg" className="mt-10 btn-outline " variant="outline" > 
+        <Link href="/about" > About us </Link>
+      </Button>
+      </div>
     </div>
     <HeroCarousel />
     </section>

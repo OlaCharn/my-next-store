@@ -1,16 +1,20 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Link from "next/link";
-import { VscCode } from "react-icons/vsc";
+import Image from "next/image";
+import logo from "@/public/images/logo.webp";
 
 function Logo() {
+
   return (
-    <Button size="icon" asChild>
-      <Link href="/">
-        <VscCode className="w-6 h-6" />
-      </Link>
-    </Button>
+    <Link href="/" passHref>
+        <Image
+          src={logo}
+          alt="logo"
+          priority
+          className="w-[5rem] h-[5rem] rounded-md object-cover"
+        />
+    </Link>
   );
 }
-
 export default Logo;
+
