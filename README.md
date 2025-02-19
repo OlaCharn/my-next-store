@@ -8,7 +8,7 @@ Vintage Comics Store is a modern e-commerce platform built with Next.js, TypeScr
 
 You can view the live version of the app at the following link:
 
-[View Deployment on Netlify]([https://crm-mvp.netlify.app/](https://vintage-kiste.vercel.app/))
+[View Deployment on Netlify]([https://crm-mvp.netlify.app/](https://vintage-kiste.vercel.app/])
 
 
 
